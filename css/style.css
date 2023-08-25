@@ -1,13 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:ital@1&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
 body {
-    font-family: 'Tilt Prism', cursive;
+    font-family: 'Nanum Pen Script', cursive;
 }
 
+.status-bar__column {
+    width: 33%;
+}
 .status-bar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .status-bar__column:first-child span {
     margin-right: 5px;
+}
+
+.status-bar__column:nth-child(2){
+    display:flex;
+    justify-content: center;
+}
+
+.status-bar__column:last-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.status-bar__column .fa-battery-full{
+    margin: 0px 5px; 
 }
