@@ -41,3 +41,7 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+
+input:focus {
+    outline:none /*브라우저 기능: 클릭했을 때 생기는 outline 없애기*/
+}
