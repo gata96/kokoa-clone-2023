@@ -35,15 +35,29 @@ body {
 #login-form input {
     padding: 15px 0px; /*내부 박스 안에서 위아래 공간주기*/
     border: none; /*경계선 없애기*/
-    border-bottom: 1px solid rgba(0,0,0,0.2);
     font-size: 18px;
     margin-bottom: 25px; /*아래에 공간 주기*/
-    transition: border-color 0.3s ease-in-out; /*애니메이션*/
 }
 #login-form input::placeholder { /*Email~, Password 글자색 */
     color: rgba(0,0,0,0.4); /*0,0,0은 검정색을 의미, 마지막 숫자 0.4는 투명도를 의미*/
 }
 
+#login-form input:not([type="submit"]) {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    transition: border-color 0.3s ease-in-out; /*애니메이션*/
+}
 #login-form input:focus {
     border-color: var(--yellow); /*variables.css에서 색 설정*/
+}
+#login-form input[type="submit"] {
+    background-color: var(--yellow);
+    cursor: pointer; /*옵션: pointer, not-allowed, progress*/
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+#login-form a {
+    text-align: center; /*text를 가운데 정렬*/
+    text-decoration: none; /*text 스타일 초기화*/
+    color: inherit;
+    font-size: 13px;
 }
