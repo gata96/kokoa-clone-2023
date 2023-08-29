@@ -1,0 +1,54 @@
+.welcome-header {
+    margin: 90px 0px; /*header 위아래의 공간. 위아래 좌우 */
+    text-align: center; /*p와 h1-h7 등 text를 가운데로 정렬 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.welcome-header__title {
+    margin-bottom: 14px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.welcome-header__text {
+    width: 60%; /*텍스트 길이에 범위를 제한함*/
+    opacity: 0.7; /*투명도*/
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column; /*input 4개 세로로 나열*/
+    margin: 0px 30px; /* form틀 자체에 좌우 공간 주기*/
+}
+
+#login-form input {
+    padding: 15px 0px; /*내부 박스 안에서 위아래 공간주기*/
+    border: none; /*경계선 없애기*/
+    font-size: 18px;
+    margin-bottom: 25px; /*아래에 공간 주기*/
+}
+#login-form input::placeholder { /*Email~, Password 글자색 */
+    color: rgba(0,0,0,0.4); /*0,0,0은 검정색을 의미, 마지막 숫자 0.4는 투명도를 의미*/
+}
+
+#login-form input:not([type="submit"]) {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    transition: border-color 0.3s ease-in-out; /*애니메이션*/
+}
+#login-form input:focus {
+    border-color: var(--yellow); /*variables.css에서 색 설정*/
+}
+#login-form input[type="submit"] {
+    background-color: var(--yellow);
+    cursor: pointer; /*옵션: pointer, not-allowed, progress*/
+    padding: 20px 0px;
+    border-radius: 5px;
+}
+#login-form a {
+    text-align: center; /*text를 가운데 정렬*/
+    text-decoration: none; /*text 스타일 초기화*/
+    color: inherit;
+    font-size: 13px;
+}
