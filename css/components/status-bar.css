@@ -1,5 +1,6 @@
 .status-bar__column {
     width: 33%;
+    
 }
 .status-bar {
     display: flex;
