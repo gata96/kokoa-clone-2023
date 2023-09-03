@@ -9,10 +9,12 @@
 
 /*Screens*/
 @import "screens/login.css";
+@import "screens/friends.css";
 
 body {
     font-family: 'Nanum Pen Script', cursive;
     height: 1000vh;
+    color: #2e363e; /*모든 글자색, 아이콘 색이 이 색상을 Default로*/
    
 }
 
