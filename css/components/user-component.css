@@ -13,6 +13,7 @@
     align-items: center;
     margin: 0 20px; 
     object-fit: cover; /*사진 사이즈 변경 시, 가로 세로 비율 그대로 유지하고 싶을 때*/
+    
 }
 
 .user-component__title { /*Gata*/
@@ -25,4 +26,9 @@
     color: rgba(0, 0, 0, 0.5);
     margin-top: 3px;
     font-weight: 500;
+}
+
+.user-component__avatar--xl {
+    width: 65px;
+    height: 65px;
 }
