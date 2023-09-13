@@ -3,9 +3,11 @@
     justify-content: space-between;
     position: relative;
     top: 15px;
+    /* align-items: center; */
     padding: var(--horizontal-space);
     width: 95%;
     position: fixed;
+
 }
 
 .screen-header__title {
@@ -14,5 +16,6 @@
 }
 
 .screen-header__icons span {
-    margin-left: 25px; 
+    margin-left: 25px;
+    width: 100%;
 }
