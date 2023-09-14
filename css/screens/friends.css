@@ -4,18 +4,19 @@
     background-color: #fafafa; /*배경색*/
     padding: 15px 0px; /*위아래 공간 주기*/
     font-size: 18px; /*text 사이즈*/
-    /* position: fixed; /*스크롤을 굴려도 friends-display-link가 화면에 고정되도록 해준다.*/
-    /* width: 100%; fixed를 주면 배치가 깨지게 되는데 화면 비율에 꽉 차도록 width:100%을 준다. */
-    /* top: 80px; status-bar(상태바)와 screen-header와 겹치지 않도록 body의 맨 위(top)에서부터 100px만큼 떨어트린다. */ */
+    position: fixed; /*스크롤을 굴려도 friends-display-link가 화면에 고정되도록 해준다.*/
+    width: 100%; /*fixed를 주면 배치가 깨지게 되는데 화면 비율에 꽉 차도록 width:100%을 준다. */
+    top: 80px; /*status-bar(상태바)와 screen-header와 겹치지 않도록 body의 맨 위(top)에서부터 80px만큼 떨어트린다.*/
     margin-bottom: 15px;
 }
 
 #friends-display-link i {
-    color: rgba(0, 0, 0, 0.4); /*아이콘 circle-info, chevron-right*/
+    color: rgba(0, 0, 0, 0.4); /*아이콘 circle-info, chevron-right */
 }
 
 .friends-screen {
     padding: 0px var(--horizontal-space);
+    padding-top: 150px;
 }
 
 .friends-screen__channel {
