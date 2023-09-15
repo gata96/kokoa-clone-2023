@@ -7,6 +7,7 @@
 @import "components/nav-bar.css";
 @import "components/screen-header.css";
 @import "components/user-component.css";
+@import "components/badge.css";
 
 /*Screens*/
 @import "screens/login.css";
@@ -18,3 +19,6 @@ body {
     color: #2e363e; /*모든 글자색을 이 색상을 Default로 갖도록 한다.*/
 }
 
+.main-screen {
+    padding: 0px var(--horizontal-space);
+} 
