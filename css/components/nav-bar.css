@@ -13,21 +13,29 @@
 }
 .nav__link {
     color: #2e363e;
-    position: relative; /*.nav__link(아이콘)을 기준으로 .nav__notification가 이동*/
+    position: relative; /*.nav__link(아이콘)을 기준으로 .nav__notification(빨간 동그라미 1)가 이동*/
 }
 .nav__notification {
-    position: absolute; /*아이콘 위로 글자가 올라오도록*/
-    left: 20px; /*아이콘으로부터 왼쪽으로 20px만큼 이동*/
-    bottom: 15px; /*아이콘으로부터 밑에서부터 15px만큼 이동*/
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
     }
 
 .nav__dot {
     background-color: tomato;
-    height: 6px;
     width: 6px;
+    height: 6px;
     border-radius: 3px;
-    display: flex;
     position: absolute;
-    left: 30px;
     bottom: 30px;
+    left: 35px;
 }
