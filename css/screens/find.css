@@ -1,7 +1,6 @@
 .find-icons {
     display: flex;
     justify-content: space-between;
-    padding-bottom: 20px;
 }
 
 .find-icons__icon { /*아이콘과 span*/
@@ -29,15 +28,15 @@
 
 .recommended-friends__title {
     font-size: 17px;
-    color: rgba(0, 0, 0, 0.5);
+    color: var(--grey);
 }
 
 .recommended-friends span {
     margin: 100px 0;
-    display: block;
+    display: block; /*span은 inline이니까 margin이 적용 안되므로 block으로 바꿔준다.*/
     text-align: center;
     font-size: 18px;
-    color: rgba(0, 0, 0,0.5);
+    color: var(--grey);
 }
 
 .open-chat__header {
