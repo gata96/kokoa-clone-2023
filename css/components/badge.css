@@ -1,11 +1,12 @@
 .badge {
-    background-color: tomato; /*색*/
-    height: 30px; /*높이-정사각형*/
-    width: 30px; /*너비-정사각형*/
-    border-radius: 15px; /*정사각형 높이의 절반을 설정하면 동그라미가 된다.*/
-    display: flex; /*<span>은 text이기 때문에 Box로 변환*/
-    justify-content: center; /*1을 동그라미 가운데에 위치*/
-    align-items: center; /*1을 동그라미 가운데에 위치*/
-    color: white; /*글자색: 하얗게*/
+    background-color: tomato;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     font-weight: 600;
 }
+
