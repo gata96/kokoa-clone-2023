@@ -10,12 +10,13 @@
     align-items: center;
 }
 
-.find-icons__icon i { /*아이콘만*/
+.find-icons__icon i { /*모든 아이콘만*/
     font-size: 35px;
+    margin-bottom: 18px;
 }
 
 .find-icons__icon span {
-    margin-top: 15px;
+    margin-top: 18px;
     font-size: 18px;
 }
 
