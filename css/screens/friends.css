@@ -1,9 +1,11 @@
 #friends-display-link {
-    display: block; /*anchor는 inline이므로 높이와 너비가 없다. 중앙으로 움직이려면 block으로 변경해야함*/
     text-align: center; /*text를 중앙에 배치하기*/
+    display: block; /*anchor는 inline이므로 높이와 너비가 없다. 중앙으로 움직이려면 block으로 변경해야함*/
     background-color: #fafafa; /*배경색*/
     padding: 15px 0px; /*상자 안에서 위아래 공간 주기 */
     font-size: 20px; /*text 사이즈*/
+    margin-bottom: 15px;
+    margin-top: -15px;
 }
 
 #friends-display-link i {
@@ -11,8 +13,7 @@
 }
 
 .friends-screen {
-    padding: 0px var(--horizontal-space);
-    padding-top: 150px;
+    padding-top: 10px;
 }
 
 .friends-screen__channel { 
