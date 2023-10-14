@@ -16,36 +16,80 @@
 
 .find-icons__icon span {
     margin-top: 18px;
-    font-size: 18px;
+    font-size: 23px;
 }
 
 .recommended-friends {
-    margin: 25px 0px;
-    padding: 25px 0px;
+    margin: 15px 0px;
+    padding: 15px 0px;
     border-top: var(--main-border);
     border-bottom: var(--main-border);
 }
 
 .recommended-friends__title {
-    font-size: 17px;
+    font-size: 21px;
     color: var(--grey);
 }
 
 .recommended-friends span {
-    margin: 100px 0;
+    margin: 90px 0;
     display: block; /*span은 inline이니까 margin이 적용 안되므로 block으로 바꿔준다.*/
     text-align: center;
-    font-size: 18px;
+    font-size: 23px;
     color: var(--grey);
 }
 
 .open-chat__header {
     display: flex;
     justify-content: space-between;
-    opacity: 0.8;
+    color: var(--grey);
+    font-size: 23px;
     margin-bottom: 25px;
 }
 
 .open-chat__header span {
-    opacity: 0.6;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.open-post__title {
+    font-weight: 600;
+    font-size: 26px;
+    margin-bottom: 7px;
+}
+
+.open-post__hashtags {
+    font-size: 26px;
+    color: var(--grey);
+    text-transform: uppercase; /*모든 글자를 대문자로 만듦*/
+}
+
+.open-post__members {
+    display: flex;
+    align-items: center;
+}
+
+.open-post__members img {
+    margin-top: 7px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.open-post__member-count {
+    color: var(--grey);
+    font-size: 23px;
+}
+
+.open-post__members .divider {
+    width: 1px;
+    height: 15px;
+    margin: 0 5px;
+    background-color: var(--grey);
+}
+
+.open-post__member-status {
+    color: rgb(240, 121, 234);
+    font-size: 23px;
+
 }
