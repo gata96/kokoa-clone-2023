@@ -1,6 +1,11 @@
-.alt-header__column span {
-    margin-right: 10px;
-}
 #chat-screen {
     background-color: #abc1d1;
+    height: 11000vh;  /* 채팅창을 스크롤할 수 있도록 */
+    
+}
+
+#chat-screen .alt-header {
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
 }
