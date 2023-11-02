@@ -1,6 +1,6 @@
 #chat-screen {
     background-color: #abc1d1;
-    height: 11000vh;  /* 채팅창을 스크롤할 수 있도록 */
+    height: 500vh;  /* 채팅창을 스크롤할 수 있도록 */
 }
 
 #chat-screen .alt-header,
@@ -21,11 +21,23 @@
     z-index: 1;
 }
 
+@keyframes fadeIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
 .main-chat {
-    margin-top: 120px;
+    margin-top: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fadeIn 0.8s linear;
 }
 
 .chat__timestamp {
@@ -37,10 +49,22 @@
     margin-bottom: 25px;
 }
 
+@keyframes message-row {
+    from {
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
 .message-row {
     width: 100%;
     display: flex;
     margin-bottom: 25px;
+    animation: message-row 1s ease-in-out;
 }
 
 .message-row img {
@@ -76,8 +100,21 @@
     font-size: 18px;
 }
 
+@keyframes message-row--own {
+    from {
+        transform: translateX(20px);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
+}
+
 .message-row--own {
     justify-content: flex-end;
+    animation: message-row--own 1s ease-in-out;
+
 }
 
 .message-row--own .message__bubble {
@@ -110,6 +147,7 @@
     padding: 5px 25px; /*이 padding으로 인해 element들이 화면상에서 안보일 수 있다.*/
     box-sizing: border-box; /*이 문장으로 해결한다.*/
     align-items: center;
+    transition: transform 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
@@ -137,12 +175,14 @@
     border: var(--main-border);
     border-radius: 25px;
     box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    /* 변화를 부드럽게 확인할 수 있음 */
 }
 
-/* placeholder에만 padding을 줄 수도 있다.
-.reply input::placeholder { 
+/* .reply input::placeholder { 
     padding: 20px;
-} */
+} 
+placeholder에만 padding을 줄 수도 있다.*/
 
 .reply__column:last-child > i {
     position: absolute;
@@ -170,3 +210,25 @@
 .reply__column button:active {
     outline: none;
 }
+
+.reply .reply__column:first-child, 
+.reply .fa-face-smile, 
+.reply button {
+    transition: opacity 1s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child, 
+.reply:focus-within .fa-face-smile, 
+.reply:focus-within button {
+    opacity: 0;
+}
+
+.reply input:focus { /*input이 focus(클릭)되면 다음 문장 실행*/
+    width: 95vw;
+    transform: translateX(-10%) translateY(-80px);
+}
+
+.reply:focus-within { /*reply 안에 있는 아무 element가 focus 되면 다음 문장 실행*/
+    transform: translateY(80px);
+}
+
