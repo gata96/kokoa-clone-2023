@@ -6,4 +6,5 @@
     position: absolute;
     right: -10px;
     top: -7px;
+    flex-wrap: nowrap;
 }
