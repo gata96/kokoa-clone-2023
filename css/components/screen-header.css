@@ -12,7 +12,6 @@
 }
 
 .screen-header__icons {
-    display: flex;
     flex-wrap: nowrap;
 }
 
