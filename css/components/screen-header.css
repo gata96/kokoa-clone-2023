@@ -11,11 +11,14 @@
     font-weight: 600;
 }
 
+.screen-header__icons {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .screen-header__icons span {
     margin-left: 25px;
     position: relative;
-    display: flex;
-    flex-wrap: nowrap;
 }
 
 @keyframes rotateCog {
