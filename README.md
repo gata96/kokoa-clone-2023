@@ -1,3 +1,1 @@
-# Kokoa Clone 2023 Update
-
-Html & CSS are so much better!
+## 카카오톡 클론코딩 (일명 코코아톡) 프로젝트 입니다.
